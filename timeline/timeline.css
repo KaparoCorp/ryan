@@ -1,0 +1,124 @@
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: linear-gradient(to bottom, black
+    , whitesmoke); */
+    color:black;
+    padding:1rem;
+}
+
+.timeline{
+    position: relative;
+    padding:1rem;
+    margin:0 auto;
+    max-width: 1300px;
+}
+.timeline::before{
+        content: '';
+        position:absolute;
+        height:100%;
+        border:1px solid black;
+        right:40px;
+        top:0;
+}
+.timeline::after {
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.timeline__item{
+    padding: 1rem;
+    border: 2px solid black;
+    border-image: linear-gradient(to right, white 0%, black 100%);
+    border-image-slice: 1;
+    position: relative;
+    margin: 1rem 3rem 1rem 1rem;
+    clear: both;
+}
+
+.timeline__item::after,
+.timeline__item::before{
+    content: '';
+    position: absolute;
+}
+.timeline__item::before{
+    right: -10px;
+    top:calc(50% -5px);
+    border-style: solid;
+    border-color: transparent transparent black black ;
+    border-width: 10px;
+    transform: rotate(45deg);
+}
+
+
+.timeline__item__year {
+    text-align: center;
+  max-width: 150px;
+  margin: 0 48px 0 auto;
+  font-size: 1.8rem;
+  background-color: black;
+  line-height: 1;
+  border-image: none;
+  padding: .5rem 1rem 1rem;
+  
+}
+
+
+.timeline__item__year::before {
+    display: none;
+  }
+  
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.timeline__blub {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: .5rem 0 0;
+}
+
+@media screen and(min-width:700px) {
+    .timeline{
+        padding: 2rem;
+    }
+    .timeline::before{
+        left: calc(50% - 1px);
+        right:auto;
+    }
+    .timeline__item{
+        width: 44%;
+        margin: 1rem;
+    }
+
+    .timeline__item::nth-of-type(2n){
+        float: right;
+        margin:1rem;
+        border-image:linear-gradient(to right, black 0%, white 100%);
+        border-image-slice:1;
+    }
+        .timeline__item::before{
+            right: auto;
+            left: -10px;
+            border-color: transparent transparent black black;
+        }
+        .timeline__item__year{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .timeline__item__year::nth-of-type(2n) {
+            float: none;
+            margin: 0 auto;
+            border-image: none;
+        }
+            .timeline__item__year::before {
+              display: none;
+            }
+}
