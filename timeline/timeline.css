@@ -4,26 +4,19 @@
 }
 
 body{
-    /* background-image: linear-gradient(to bottom, black
-    , whitesmoke); */
-    color:black;
+    background-color: black;
+    color:green;
     padding:1rem;
 }
 
 .timeline{
     position: relative;
+    display: flex;
     padding:1rem;
     margin:0 auto;
     max-width: 1300px;
 }
-.timeline::before{
-        content: '';
-        position:absolute;
-        height:100%;
-        border:1px solid black;
-        right:40px;
-        top:0;
-}
+
 .timeline::after {
     content: "";
     display: table;
@@ -32,8 +25,8 @@ body{
 
 .timeline__item{
     padding: 1rem;
-    border: 2px solid black;
-    border-image: linear-gradient(to right, white 0%, black 100%);
+    border: 2px solid green;
+    border-image: linear-gradient(to right, black 0%, white 100%);
     border-image-slice: 1;
     position: relative;
     margin: 1rem 3rem 1rem 1rem;
@@ -49,7 +42,7 @@ body{
     right: -10px;
     top:calc(50% -5px);
     border-style: solid;
-    border-color: transparent transparent black black ;
+    border-color: white white transparent transparent  ;
     border-width: 10px;
     transform: rotate(45deg);
 }
@@ -60,7 +53,7 @@ body{
   max-width: 150px;
   margin: 0 48px 0 auto;
   font-size: 1.8rem;
-  background-color: black;
+  background-color: white;
   line-height: 1;
   border-image: none;
   padding: .5rem 1rem 1rem;
@@ -84,8 +77,15 @@ body{
   margin: .5rem 0 0;
 }
 
+.imgDisplay{
+    height:900px;
+    width: 1200px;
+    background-color: red;
+}
 @media screen and(min-width:700px) {
     .timeline{
+        display: flex;
+        flex-direction: column;
         padding: 2rem;
     }
     .timeline::before{
@@ -100,13 +100,13 @@ body{
     .timeline__item::nth-of-type(2n){
         float: right;
         margin:1rem;
-        border-image:linear-gradient(to right, black 0%, white 100%);
+        border-image:linear-gradient(to right, white 0%, black 100%);
         border-image-slice:1;
     }
         .timeline__item::before{
             right: auto;
             left: -10px;
-            border-color: transparent transparent black black;
+            border-color: black black transparent transparent ;
         }
         .timeline__item__year{
             text-align: center;
