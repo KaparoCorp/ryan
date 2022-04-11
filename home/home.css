@@ -1,3 +1,22 @@
 *{
     font-family: monospace;
 }
+.container{
+    border: 2px solid black;
+}
+.detals{
+    display: flex;
+    flex-direction: column;
+}
+
+.detals p{
+    padding: 0;
+    margin: 2px;
+}
+.moreInfo{
+    display: flex;
+}
+.title{
+    flex-direction: row;
+    
+}
