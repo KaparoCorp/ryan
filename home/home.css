@@ -33,6 +33,23 @@ header{
     background-color: black;
     color: white;
 }
+.hero{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.greetings{
+    display: flex;
+}
+.greetings #userName{
+    text-transform: capitalize;
+}
+.hero .heroText .intro { 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 .container{
     border: 2px solid black;
 }
@@ -51,8 +68,4 @@ header{
 .title{
     flex-direction: row;
     
-}
-
-.horizontal{
-    display: grid;
 }
