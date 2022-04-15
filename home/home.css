@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
+}
+body{
+    /* background-image: linear-gradient(to bottom ,aqua, white,aqua,white); */
 }
 header{
 
@@ -35,7 +39,7 @@ header{
 }
 .hero{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     
 }
 .greetings{
@@ -49,6 +53,15 @@ header{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    
+}
+.intro p{
+    font-size: 2rem;
+}
+.intro .text{
+    width:50%;
+    margin: 4rem auto;
+
 }
 .container{
     border: 2px solid black;
@@ -68,4 +81,33 @@ header{
 .title{
     flex-direction: row;
     
+}
+.projects img{
+    width: 600px;
+    height:600px;
+}
+.heading{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.projects .project{
+    display: flex;
+}
+.project{
+    margin: 2rem auto;
+}
+.timeline{
+    margin-left: 10rem;
+}
+.timeline .timeline__blub{
+    cursor: pointer;
+}
+.timelineSplit{
+    display: flex;
+}
+.imgDisplay{
+    height:400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
