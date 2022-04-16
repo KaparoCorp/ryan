@@ -5,9 +5,6 @@
     box-sizing: border-box;
     text-align: center;
 }
-body{
-    /* background-image: linear-gradient(to bottom ,aqua, white,aqua,white); */
-}
 .nameQuery{
     cursor: help;
     text-decoration: none;
