@@ -8,6 +8,12 @@
 body{
     /* background-image: linear-gradient(to bottom ,aqua, white,aqua,white); */
 }
+.nameQuery{
+    cursor: help;
+    text-decoration: none;
+    color: black;
+    
+}
 header{
 
     display:flex;
@@ -66,15 +72,7 @@ header{
 .container{
     border: 2px solid black;
 }
-.detals{
-    display: flex;
-    flex-direction: column;
-}
 
-.detals p{
-    padding: 0;
-    margin: 2px;
-}
 .moreInfo{
     display: flex;
 }
@@ -96,6 +94,22 @@ header{
 .project{
     margin: 2rem auto;
 }
+.mySkills ul{
+    position: relative;
+    left: 40rem;
+    display: flex;
+}
+.mySkills ul li{
+    list-style: none;
+}
+.mySkills img{
+    width: 80px;
+    height: 80px;
+}
+.mySkills ul  a{
+    text-decoration: none;
+}
+
 .timeline{
     margin-left: 10rem;
 }
