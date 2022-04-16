@@ -110,11 +110,15 @@ header{
 .timeline{
     margin-left: 10rem;
 }
+.timelines{
+    display: grid;
+}
 .timeline .timeline__blub{
     cursor: pointer;
 }
 .timelineSplit{
     display: flex;
+    justify-content: space-evenly;
 }
 .imgDisplay{
     height:400px;
