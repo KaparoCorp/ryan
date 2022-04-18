@@ -91,17 +91,25 @@ header{
 .project{
     margin: 2rem auto;
 }
+.description{
+    margin:1rem auto;
+}
 .mySkills ul{
     position: relative;
     left: 40rem;
     display: flex;
+    margin-top: 2rem;
 }
 .mySkills ul li{
     list-style: none;
+    padding: 1rem 1rem;
 }
 .mySkills img{
     width: 80px;
     height: 80px;
+}
+.mySkills img:hover{
+    transform: scale(1.5);
 }
 .mySkills ul  a{
     text-decoration: none;
@@ -125,4 +133,79 @@ header{
     width: 400px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.contactMe ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 50rem;
+}
+.contactMe img{
+    width: 150px;
+    height: 150px;
+}
+.email form{
+    display: flex;
+
+
+}
+.email form input{
+    padding: 1rem 2rem;
+}
+#submit{
+    background-color: aqua;
+    color: black;
+    border: 2px dotted black;
+}
+@media screen and (max-width:450px) {
+    *{
+        font-size: 1rem;
+    }
+    .navBar{
+        display: none;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .heading{
+        margin-top: 2rem;
+    }
+    .projects .project {
+        display: grid;
+        grid-auto-columns: min-content;
+    }
+    .projects img{
+        width: 350px;
+        height: 350px;
+    }
+    .mySkills ul{
+        display: grid;
+        left: 0;
+    }
+    .timeline{
+        margin-left: 0;
+    }
+
+    .imgDisplay{
+        display: none;
+    }
+    
+    .contactMe img{
+        width: 150px;
+        height: 150px;
+    }
+    .contactMe ul{
+        left: 0rem;
+    }
+    .email form{
+        display: grid;
+    }
+    .email form input{
+        width: 250px;
+    }
+    footer{
+        position: relative;
+        left: 0;
+    }
 }
