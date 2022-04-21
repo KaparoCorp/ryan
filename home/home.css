@@ -18,6 +18,7 @@ header{
 .navBar{
     position: absolute;
     right: 0;
+    margin-top: 1rem;
 }
 .navLinks{
     display: flex;
@@ -33,18 +34,21 @@ header{
     color:black;
     background-color: aqua;
     cursor: progress;
-  
+    border:3px solid black;
     padding:1rem 2rem;
+    
+    
 }
 .navLinks li a:hover{
     background-color: black;
     color: white;
+    transform: scale(1.2);
+    animation: boarderDisco 2s ease-in-out infinite normal forwards ;
 }
 .hero{
     width: 100vw;
-    height: 80vh;
-    
-}
+    height: 80vh; 
+} 
 .greetings{
     display: flex;
 }
@@ -208,4 +212,27 @@ header{
         position: relative;
         left: 0;
     }
+}
+
+@keyframes boarderDisco {
+    0%{
+        border-top: 3px solid black ;
+        border-right: 3px solid black ;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black ; 
+    }
+    25%{
+       border-top: 3px solid aqua;
+    }
+    50%{
+        border-right: 3px solid aqua ;
+    }
+    75%{
+         border-bottom: 3px solid aqua ;
+    }
+    100%{
+
+        border-left: 3px solid aqua ;
+    }
+
 }
