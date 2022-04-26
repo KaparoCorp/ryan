@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     text-align: center;
+    letter-spacing: 2px;
 }
 .nameQuery{
     cursor: help;
@@ -162,7 +163,7 @@ header{
     color: black;
     border: 2px dotted black;
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:650px) {
     *{
         font-size: 1rem;
     }
