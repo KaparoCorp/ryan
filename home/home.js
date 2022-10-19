@@ -17,7 +17,7 @@ preview.forEach((e)=>{
         if(e == preview[0]){
             imgScreen.style.backgroundImage=`url(../pics/lizar.png)`
         }else if(e == preview[1]){
-            imgScreen.style.backgroundImage=`url(../pics/thika.jpeg)`
+            imgScreen.style.backgroundImage=`url(../pics/thikahighschool.jpg)`
         }else if(e == preview[2]){
             imgScreen.style.backgroundImage=`url(../pics/lizar.png)`
         }else{
