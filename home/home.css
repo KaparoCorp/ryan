@@ -51,6 +51,7 @@ header{
     height: 80vh; 
 } 
 .greetings{
+    position: relative;
     display: flex;
 }
 .greetings #userName{
@@ -150,11 +151,10 @@ header{
     width: 150px;
     height: 150px;
 }
-.email form{
-    display: flex;
-
-
+.email{ 
+    width: 50%;
 }
+
 .email form input{
     padding: 1rem 2rem;
 }
@@ -162,6 +162,14 @@ header{
     background-color: aqua;
     color: black;
     border: 2px dotted black;
+}
+#submit:hover{
+    background-color: black;
+    color:whitesmoke;
+    border : 2px dotted aqua;
+}
+footer{
+    margin: 2rem 2rem;   
 }
 @media screen and (max-width:650px) {
     *{
@@ -175,10 +183,6 @@ header{
     }
     .heading{
         margin-top: 2rem;
-    }
-    .projects .project {
-        display: grid;
-        grid-auto-columns: min-content;
     }
     .projects img{
         width: 350px;
@@ -215,6 +219,35 @@ header{
     }
 }
 
+@media screen and (max-width:450px) {
+    *{
+        position:relative;
+        text-align: left;
+        font-size: x-small;
+    }
+    .intro span{
+        display: flex;
+        flex-direction: column;
+        left: -50px;
+    }
+
+    .greetings{
+        left: -50px;
+    }
+    .intro .text{
+        margin: 0;
+        left: -50px;
+    }
+    .project img{
+        height:150px;
+        width: 150px;
+    }
+   
+    .timelineSplit{
+        justify-content: flex-start;
+       
+    }
+}
 @keyframes boarderDisco {
     0%{
         border-top: 3px solid black ;
