@@ -1,0 +1,239 @@
+*{
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.nameQuery{
+    cursor: help;
+    text-decoration: none;
+    color: black;
+    
+}
+header{
+
+    display:flex;
+}
+.navBar{
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+}
+.navLinks{
+    display: flex;
+}
+.navLinks li{
+    list-style: none;
+    margin: 1rem auto;
+}
+.navLinks li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    color:black;
+    background-color: aqua;
+    cursor: progress;
+    border:3px solid black;
+    padding:1rem 2rem;
+    
+    
+}
+.navLinks li a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    animation: boarderDisco 2s ease-in-out infinite normal forwards ;
+}
+.hero{
+    width: 100vw;
+    height: 80vh; 
+} 
+.greetings{
+    display: flex;
+}
+.greetings #userName{
+    text-transform: capitalize;
+}
+.hero .heroText .intro { 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.intro p{
+    font-size: 2rem;
+}
+.intro .text{
+    width:50%;
+    margin: 4rem auto;
+
+}
+.container{
+    border: 2px solid black;
+}
+
+.moreInfo{
+    display: flex;
+}
+.title{
+    flex-direction: row;
+    
+}
+.projects img{
+    width: 600px;
+    height:600px;
+}
+.heading{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.projects .project{
+    display: flex;
+}
+.project{
+    margin: 2rem auto;
+}
+.description{
+    margin:1rem auto;
+}
+.mySkills ul{
+    position: relative;
+    left: 40rem;
+    display: flex;
+    margin-top: 2rem;
+}
+.mySkills ul li{
+    list-style: none;
+    padding: 1rem 1rem;
+}
+.mySkills img{
+    width: 80px;
+    height: 80px;
+}
+.mySkills img:hover{
+    transform: scale(1.5);
+}
+.mySkills ul  a{
+    text-decoration: none;
+}
+
+.timeline{
+    margin-left: 10rem;
+}
+.timelines{
+    display: grid;
+}
+.timeline .timeline__blub{
+    cursor: pointer;
+}
+.timelineSplit{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imgDisplay{
+    height:400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactMe ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 50rem;
+}
+.contactMe img{
+    width: 150px;
+    height: 150px;
+}
+.email form{
+    display: flex;
+
+
+}
+.email form input{
+    padding: 1rem 2rem;
+}
+#submit{
+    background-color: aqua;
+    color: black;
+    border: 2px dotted black;
+}
+@media screen and (max-width:650px) {
+    *{
+        font-size: 1rem;
+    }
+    .navBar{
+        display: none;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .heading{
+        margin-top: 2rem;
+    }
+    .projects .project {
+        display: grid;
+        grid-auto-columns: min-content;
+    }
+    .projects img{
+        width: 350px;
+        height: 350px;
+    }
+    .mySkills ul{
+        display: grid;
+        left: 0;
+    }
+    .timeline{
+        margin-left: 0;
+    }
+
+    .imgDisplay{
+        display: none;
+    }
+    
+    .contactMe img{
+        width: 150px;
+        height: 150px;
+    }
+    .contactMe ul{
+        left: 0rem;
+    }
+    .email form{
+        display: grid;
+    }
+    .email form input{
+        width: 250px;
+    }
+    footer{
+        position: relative;
+        left: 0;
+    }
+}
+
+@keyframes boarderDisco {
+    0%{
+        border-top: 3px solid black ;
+        border-right: 3px solid black ;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black ; 
+    }
+    25%{
+       border-top: 3px solid aqua;
+    }
+    50%{
+        border-right: 3px solid aqua ;
+    }
+    75%{
+         border-bottom: 3px solid aqua ;
+    }
+    100%{
+
+        border-left: 3px solid aqua ;
+    }
+
+}
